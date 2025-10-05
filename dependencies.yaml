@@ -160,7 +160,7 @@ dependencies:
           - pylibraft==23.12.*
       - output_types: pyproject
         packages:
-          - pylibraft @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python
+          - pylibraft @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python/pylibraft
           - wheel
           - setuptools
           - &treelite_runtime treelite_runtime==3.9.1
@@ -187,14 +187,15 @@ dependencies:
             # we make it optional (i.e. an extra for pip
             # installation/run_constrained for conda)?
           - scipy>=1.8.0
-          - raft-dask==23.12.*
           - rapids-dask-dependency==23.12.*
           - *treelite
       - output_types: [conda, requirements]
         packages:
+          - raft-dask==23.12.*
           - cupy>=12.0.0
       - output_types: pyproject
         packages:
+          - raft-dask @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python/raft-dask
           - *treelite_runtime
           - cupy-cuda11x>=12.0.0
     specific:
