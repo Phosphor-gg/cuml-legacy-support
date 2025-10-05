@@ -58,7 +58,7 @@ dependencies:
 - pytest-cases
 - pytest-cov
 - pytest-xdist
-- python>=3.9,<3.11
+- python>=3.9,<3.12
 - raft-dask==23.12.*
 - rapids-dask-dependency==23.12.*
 - recommonmark

@@ -73,7 +73,7 @@ classifiers = [
     "Intended Audience :: Developers",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
 ]
 
 [project.optional-dependencies]
@@ -108,7 +108,7 @@ version = {file = "cuml/VERSION"}
 
 [tool.black]
 line-length = 79
-target-version = ["py39"]
+target-version = ["py39", "py310", "py311"]
 include = '\.py?$'
 force-exclude = '''
 _stop_words\.py |
