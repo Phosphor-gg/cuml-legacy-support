@@ -154,10 +154,13 @@ dependencies:
           - scikit-build>=0.13.1
           - cython>=3.0.0
           - &treelite treelite==3.9.1
-          - pylibraft==23.12.*
           - rmm==23.12.*
+      - output_types: [conda, requirements]
+        packages:
+          - pylibraft==23.12.*
       - output_types: pyproject
         packages:
+          - pylibraft @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python
           - wheel
           - setuptools
           - &treelite_runtime treelite_runtime==3.9.1

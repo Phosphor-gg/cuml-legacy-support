@@ -18,7 +18,7 @@ requires = [
     "cuda-python>=11.7.1,<12.0a0",
     "cython>=3.0.0",
     "ninja",
-    "pylibraft==23.12.*",
+    "pylibraft @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python",
     "rmm==23.12.*",
     "scikit-build>=0.13.1",
     "setuptools",
