@@ -19,7 +19,7 @@ requires = [
     "cython>=3.0.0",
     "ninja",
     "pylibraft @ git+https://github.com/Phosphor-gg/raft-legacy-support.git#subdirectory=python/pylibraft",
-    "rmm @ git+https://github.com/Phosphor-gg/rmm-legacy-support.git#subdirectory=python",
+    "rmm @ git+https://github.com/Phosphor-gg/rmm-legacy-support.git@main#subdirectory=python",
     "scikit-build>=0.13.1",
     "setuptools",
     "treelite==3.9.1",
